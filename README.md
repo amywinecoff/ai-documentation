@@ -1,4 +1,4 @@
-Below is a list of publications that either propose documentation approaches or evaluate their use. 
+Below is a list of publications that either propose AI documentation approaches or evaluate their use. 
 
 For each framework, we classified whether the approach primarily focused on data; models; systems; or methods, tasks, and processes. When a framework did not fit neatly into one of these categories, we assigned it to the most appropriate category or categories based on its primary focus. We also categorized the type of evaluation each framework or empirical research study employed. Frameworks
 employing a "feasibility analysis" are those where the framework’s authors or another group applied the framework to create documentation for a hypothetical or actual dataset, model, system, or method. This type of analysis demonstrates that the framework could theoretically be used for its intended purpose but does not involve empirical evaluation with
