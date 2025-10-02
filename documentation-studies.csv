@@ -1,0 +1,59 @@
+Author,Year,Title,Framework Type,Evaluation Type,Link
+Adkins et al.,2022,Prescriptive and Descriptive Approaches to Machine-Learning Transparency,"Method, process, or task",Feasibility analysis,https://dl.acm.org/doi/abs/10.1145/3491101.3519724
+"Ahlawat, Winecoff, & Mayer",2024,Minimum Viable Ethics: From Institutionalizing Industry AI Governance to Product Impact,Evaluation only,Practitioner real-world study,https://arxiv.org/abs/2409.06926
+Arnold et al.,2019,FactSheets: Increasing trust in AI services through supplier's declarations of conformity,System,Feasibility analysis,https://ieeexplore.ieee.org/abstract/document/8843893
+Baracaldo et al.,2022,Towards an Accountable and Reproducible Federated Learning: A FactSheets Approach,System,Feasibility analysis,http://arxiv.org/abs/2202.12443
+Barker et al.,2023,FeedbackLogs: Recording and Incorporating Stakeholder Feedback into Machine Learning Pipelines,"Method, process, or task",Practitioner lab study,https://dl.acm.org/doi/abs/10.1145/3617694.3623239
+Bender & Friedman,2018,Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science,Data,Feasibility analysis,https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00041/43452/Data-Statements-for-Natural-Language-Processing
+Bhat et al.,2023,Aspirations and Practice of ML Model Documentation: Moving the Needle with Nudging and Traceability,Evaluation only,Practitioner lab study,https://dl.acm.org/doi/full/10.1145/3544548.3581518
+Blasch et al.,2020,Multisource AI Scorecard Table for System Evaluation,System,Feasibility analysis,https://arxiv.org/abs/2102.03985
+Boyd,2021,Datasheets for Datasets help ML Engineers Notice and Understand Ethical Issues in Training Data,Evaluation only,Practitioner lab study,https://dl.acm.org/doi/10.1145/3479582
+Brajovic et al.,2023,Model Reporting for Certifiable AI: A Proposal from Merging EU Regulation into AI Development,System,Feasibility analysis,http://arxiv.org/abs/2307.11525
+Chang & Custis,2022,Understanding Implementation Challenges in Machine Learning Documentation,Evaluation only,Practitioner real-world study,https://dl.acm.org/doi/10.1145/3551624.3555301
+Chmielinski et al.,2020,The Dataset Nutrition Label (2nd Gen): Leveraging Context to Mitigate Harms in Artificial Intelligence,Data,Feasibility analysis,https://arxiv.org/abs/2201.03954
+Chmielinski et al.,2024,The CLeAR Documentation Framework for AI Transparency Recommendations for Practitioners and Context for Policymakers,"Method, process, or task",None,https://perma.cc/YJT3-C6YM
+Crisan et al.,2022,Interactive Model Cards: A Human-Centered Approach to Model Documentation,Model,Practitioner lab study,https://dl.acm.org/doi/abs/10.1145/3531146.3533108
+Díaz et al.,2024,SoUnD Framework: Analyzing (So)Cial Representation in (Un)Structured (D)Ata,Data,Feasibility analysis,http://arxiv.org/abs/2402.05160
+Gebru et al.,2021,Datasheets for Datasets,Data,Feasibility analysis,http://arxiv.org/abs/1803.09010
+Geiger et al.,2020,"Garbage in, Garbage out? Do Machine Learning Application Papers in Social Computing Report Where Human-labeled Training Data Comes From?",Evaluation only,Artifact study,https://dl.acm.org/doi/abs/10.1145/3351095.3372862
+Gilbert et al.,2023,Reward Reports for Reinforcement Learning,System,Feasibility analysis,https://dl.acm.org/doi/abs/10.1145/3600211.3604698
+Heger et al.,2022,"Understanding Machine Learning Practitioners’ Data Documentation Perceptions, Needs, Challenges, and Desiderata",Evaluation only,Practitioner real-world study,https://dl.acm.org/doi/abs/10.1145/3555760
+Hind et al.,2019,Experiences with Improving the Transparency of AI Models and Services,Evaluation only,Practitioner real-world study,https://dl.acm.org/doi/abs/10.1145/3334480.3383051
+Holland et al.,2018,The Dataset Nutrition Label: A Framework To Drive Higher Data Quality Standards,Data,Feasibility analysis,https://arxiv.org/abs/1805.03677
+Hupont & Gomez,2022,Documenting Use Cases in the Affective Computing Domain Using Unified Modeling Language,"Method, process, or task",Feasibility analysis,https://ieeexplore.ieee.org/abstract/document/9953809
+Jorgensen,2025,Documenting Deployment with Fabric: A Repository of Real-World AI Governance,System,Practitioner lab study,https://arxiv.org/abs/2508.14119
+"Laufer et al.,",2025,Anatomy of a Machine Learning Ecosystem: 2 Million Models on Hugging Face,Evaluation only,Artifact study,https://arxiv.org/abs/2508.06811
+Liang et al.,2024,What’s Documented in AI? Systematic Analysis of 32K AI Model Cards,Evaluation only,Artifact study,http://arxiv.org/abs/2402.05160
+Liao et al.,2023,Designerly Understanding: Information Needs for Model Transparency to Support Design Ideation for AI-Powered User Experience,Evaluation only,Practitioner lab study,https://dl.acm.org/doi/abs/10.1145/3544548.3580652
+Lucaj et al.,2025,TechOps: Technical Documentation Templates for the AI Act,System,Practitioner lab study,https://arxiv.org/abs/2508.08804
+Marone & Van Durme,2023,Data Portraits: Recording Foundation Model Training Data,Data,Feasibility analysis,https://arxiv.org/abs/2508.08804
+McMillan-Major et al.,2021,Reusable Templates and Guides For Documenting Datasets and Models for Natural Language Processing and Generation: A Case Study of the HuggingFace and GEM Data and Model Cards,"Data, Model",Feasibility analysis,https://aclanthology.org/2021.gem-1.11/
+"McMillan-Major, Bender, & Friedman",2024,Data Statements: From Technical Concept to Community Practice,Data,Practitioner lab study,https://dl.acm.org/doi/10.1145/3594737
+Miceli et al.,2021,Documenting Computer Vision Datasets: An Invitation to Reflexive Data Practices,Evaluation only,Practitioner real-world study,https://dl.acm.org/doi/10.1145/3442188.3445880
+Mitchell et al.,2019,Model Cards for Model Reporting,Model,Feasibility analysis,https://dl.acm.org/doi/abs/10.1145/3287560.3287596
+Mohammad,2022,Ethics Sheets for AI Tasks,"Method, process, or task",Feasibility analysis,http://arxiv.org/abs/2107.01183
+"Moore, LIao, & Subramonyam",2023,fAIlureNotes: Supporting Designers in Understanding the Limits of AI Models for Computer Vision Tasks,Evaluation only,Practitioner lab study,https://dl.acm.org/doi/abs/10.1145/3544548.3581242
+Nunes et al.,2022,Using Model Cards for Ethical Reflection: A Qualitative Exploration,Evaluation only,Practitioner lab study,https://dl.acm.org/doi/10.1145/3554364.3559117
+Papakyriakopoulos et al.,2023,Augmented Datasheets for Speech Datasets and Ethical Decision-Making,Data,Feasibility analysis,https://dl.acm.org/doi/abs/10.1145/3593013.3594049
+Pepe et al.,2024,"How do Hugging Face Models Document Datasets, Bias, and Licenses? An Empirical Study",Evaluation only,Artifact study,https://dl.acm.org/doi/abs/10.1145/3643916.3644412
+Procope et al.,2022,System-Level Transparency of Machine Learning,System,Feasibility analysis,https://perma.cc/BX4D-ZXP7
+Pushkarna et al.,2022,Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI,Data,Practitioner real-world study,https://dl.acm.org/doi/abs/10.1145/3531146.3533231
+Raji & Yang,2020,ABOUT ML: Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles,System,None,http://arxiv.org/abs/1912.06166
+Reid & Williams,2023,Right the Docs: Characterising Voice Dataset Documentation Practices Used in Machine Learning,Evaluation only,"Practitioner real-world study, Artifact study",http://arxiv.org/abs/2303.10721
+Richards et al.,2020,A Methodology for Creating AI FactSheets,System,Feasibility analysis,https://arxiv.org/abs/2006.13796
+Roman et al.,2023,Open Datasheets: Machine-Readable Documentation for Open Datasets and Responsible AI Assessments,Data,Feasibility analysis,http://arxiv.org/abs/2312.06153
+Rostamzadeh et al.,2022,Healthsheet: Development of a Transparency Artifact for Health Datasets,Data,Practitioner lab study,https://dl.acm.org/doi/abs/10.1145/3531146.3533239
+Shen et al.,2022,"The Model Card Authoring Toolkit: Toward Community-Centered, Deliberation-Driven AI Design",Model,Practitioner lab study,https://dl.acm.org/doi/10.1145/3531146.3533110
+Shimorina & Belz,2021,The Human Evaluation Datasheet 1.0: A Template for Recording Details of Human Evaluation Experiments in NLP,"Method, process, or task",None,http://arxiv.org/abs/2103.09710
+Soh,2021,Building Legal Datasets,Data,None,#ERROR!
+Sokol et al.,2025,BenchmarkCards: Standardized Documentation for Large Language Model Benchmarks,,Practitioner lab-study,https://arxiv.org/abs/2410.12974
+Sokol & Flach,2020,Explainability Fact Sheets: A Framework for Systematic Assessment of Explainable Approaches,"Method, process, or task",Feasibility analysis,https://dl.acm.org/doi/10.1145/3351095.3372870
+Srinivasan et al.,2021,Artsheets for Art Datasets,Data,Feasibility analysis,https://openreview.net/forum?id=K7ke_GZ_6N
+Stoyanovich & Howe,2019,Nutritional Labels for Data and Models,"Data, Model",Feasibility analysis,https://perma.cc/3QVB-UZ9X
+Staufer et al.,2025,Audit Cards: Contextualizing AI Evaluations,"Method, process, or task","Practitioner real-world study, Artifact study",https://arxiv.org/abs/2504.13839
+Subramaniam et al.,2023,"Comprehensive and Comprehensible Data Catalogs: The What, Who, Where, When, Why, and How of Metadata Management",Data,Practitioner lab study,http://arxiv.org/abs/2103.07532
+Sun et al.,2019,MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science,Data,Feasibility analysis,https://dl.acm.org/doi/10.1145/3357384.3357853
+Tagliabue et al.,2021,DAG Card Is the New Model Card,"Method, process, or task",Feasibility analysis,http://arxiv.org/abs/2110.13601
+Tang et al.,2025,Navigating Uncertainties: Understanding How GenAI Developers Document Their Models on Open-Source Platforms,Evaluation only,"Practitioner lab study, Artifact study",https://arxiv.org/abs/2503.23574
+Yang et al.,2018,A Nutritional Label for Rankings,"Method, process, or task",Feasibility analysis,https://dl.acm.org/doi/abs/10.1145/3183713.3193568
+"Zheng et al.,",2022,Network Report: A Structured Description for Network Datasets,Data,Practitioner lab study,https://dl.acm.org/doi/abs/10.1145/3511808.3557115
