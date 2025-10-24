@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI documentation frameworks and studies — Sortable Table</title>
   <style>
-    :root { --bg: #ffffff; --text: #111; --muted: #666; --border: #e5e7eb; }
+    :root {
+      --bg: #ffffff;
+      --text: #111;
+      --muted: #666;
+      --border: #e5e7eb;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
       margin: 2rem;
@@ -13,29 +20,81 @@
       background: var(--bg);
       line-height: 1.5;
     }
-    h1 { margin-bottom: 0.25rem; }
-    .subtle { color: var(--muted); margin-top: 0; }
+
+    h1 {
+      margin-bottom: 0.25rem;
+    }
+
+    .subtle {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
     .controls {
-      display: flex; gap: 1rem; align-items: center; margin: 1rem 0 1.25rem 0; flex-wrap: wrap;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin: 1rem 0 1.25rem 0;
+      flex-wrap: wrap;
     }
-    .search { padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: 0.5rem; min-width: 260px; }
+
+    .search {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      min-width: 260px;
+    }
+
     table {
-      border-collapse: collapse; width: 100%; table-layout: fixed;
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
     }
+
     thead th {
-      position: sticky; top: 0; background: #f8fafc; z-index: 1;
+      position: sticky;
+      top: 0;
+      background: #f8fafc;
+      z-index: 1;
     }
-    th, td {
-      border: 1px solid var(--border); padding: 0.5rem 0.6rem; vertical-align: top; word-wrap: break-word;
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.6rem;
+      vertical-align: top;
+      word-wrap: break-word;
     }
-    th { text-align: left; font-weight: 600; }
-    tbody tr:nth-child(odd) { background: #fcfcfd; }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .hint { font-size: 0.9rem; color: var(--muted); }
-    .sortable th { cursor: pointer; }
+
+    th {
+      text-align: left;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: #fcfcfd;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hint {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .sortable th {
+      cursor: pointer;
+    }
   </style>
 </head>
+
 <body>
 
   <h1>AI documentation frameworks and studies</h1>
@@ -62,92 +121,500 @@
   <table class="sortable" id="docTable">
     <thead>
       <tr>
-        <th>Author</th><th>Year</th><th>Title</th><th>Framework Type</th><th>Evaluation Type</th>
+        <th>Author</th>
+        <th>Year</th>
+        <th>Title</th>
+        <th>Framework Type</th>
+        <th>Evaluation Type</th>
       </tr>
     </thead>
     <tbody id="tableBody">
-      <tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3491101.3519724" target="_blank" rel="noopener">Adkins et al.</a></td><td>2022</td><td>Prescriptive and Descriptive Approaches to Machine-Learning Transparency</td><td>Method, process, or task</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2409.06926" target="_blank" rel="noopener">Ahlawat, Winecoff, &amp; Mayer</a></td><td>2024</td><td>Minimum Viable Ethics: From Institutionalizing Industry AI Governance to Product Impact</td><td>Evaluation only</td><td>Practitioner real-world study</td></tr>
-<tr><td><a href="https://ieeexplore.ieee.org/abstract/document/8843893" target="_blank" rel="noopener">Arnold et al.</a></td><td>2019</td><td>FactSheets: Increasing trust in AI services through supplier&#x27;s declarations of conformity</td><td>System</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2202.12443" target="_blank" rel="noopener">Baracaldo et al.</a></td><td>2022</td><td>Towards an Accountable and Reproducible Federated Learning: A FactSheets Approach</td><td>System</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3617694.3623239" target="_blank" rel="noopener">Barker et al.</a></td><td>2023</td><td>FeedbackLogs: Recording and Incorporating Stakeholder Feedback into Machine Learning Pipelines</td><td>Method, process, or task</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00041/43452/Data-Statements-for-Natural-Language-Processing" target="_blank" rel="noopener">Bender &amp; Friedman</a></td><td>2018</td><td>Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/full/10.1145/3544548.3581518" target="_blank" rel="noopener">Bhat et al.</a></td><td>2023</td><td>Aspirations and Practice of ML Model Documentation: Moving the Needle with Nudging and Traceability</td><td>Evaluation only</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2102.03985" target="_blank" rel="noopener">Blasch et al.</a></td><td>2020</td><td>Multisource AI Scorecard Table for System Evaluation</td><td>System</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3479582" target="_blank" rel="noopener">Boyd</a></td><td>2021</td><td>Datasheets for Datasets help ML Engineers Notice and Understand Ethical Issues in Training Data</td><td>Evaluation only</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2307.11525" target="_blank" rel="noopener">Brajovic et al.</a></td><td>2023</td><td>Model Reporting for Certifiable AI: A Proposal from Merging EU Regulation into AI Development</td><td>System</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3551624.3555301" target="_blank" rel="noopener">Chang &amp; Custis</a></td><td>2022</td><td>Understanding Implementation Challenges in Machine Learning Documentation</td><td>Evaluation only</td><td>Practitioner real-world study</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2201.03954" target="_blank" rel="noopener">Chmielinski et al.</a></td><td>2020</td><td>The Dataset Nutrition Label (2nd Gen): Leveraging Context to Mitigate Harms in Artificial Intelligence</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://perma.cc/YJT3-C6YM" target="_blank" rel="noopener">Chmielinski et al.</a></td><td>2024</td><td>The CLeAR Documentation Framework for AI Transparency Recommendations for Practitioners and Context for Policymakers</td><td>Method, process, or task</td><td>None</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533108" target="_blank" rel="noopener">Crisan et al.</a></td><td>2022</td><td>Interactive Model Cards: A Human-Centered Approach to Model Documentation</td><td>Model</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2402.05160" target="_blank" rel="noopener">Díaz et al.</a></td><td>2024</td><td>SoUnD Framework: Analyzing (So)Cial Representation in (Un)Structured (D)Ata</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="http://arxiv.org/abs/1803.09010" target="_blank" rel="noopener">Gebru et al.</a></td><td>2021</td><td>Datasheets for Datasets</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3351095.3372862" target="_blank" rel="noopener">Geiger et al.</a></td><td>2020</td><td>Garbage in, Garbage out? Do Machine Learning Application Papers in Social Computing Report Where Human-labeled Training Data Comes From?</td><td>Evaluation only</td><td>Artifact study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3600211.3604698" target="_blank" rel="noopener">Gilbert et al.</a></td><td>2023</td><td>Reward Reports for Reinforcement Learning</td><td>System</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3555760" target="_blank" rel="noopener">Heger et al.</a></td><td>2022</td><td>Understanding Machine Learning Practitioners’ Data Documentation Perceptions, Needs, Challenges, and Desiderata</td><td>Evaluation only</td><td>Practitioner real-world study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3334480.3383051" target="_blank" rel="noopener">Hind et al.</a></td><td>2019</td><td>Experiences with Improving the Transparency of AI Models and Services</td><td>Evaluation only</td><td>Practitioner real-world study</td></tr>
-<tr><td><a href="https://arxiv.org/abs/1805.03677" target="_blank" rel="noopener">Holland et al.</a></td><td>2018</td><td>The Dataset Nutrition Label: A Framework To Drive Higher Data Quality Standards</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://ieeexplore.ieee.org/abstract/document/9953809" target="_blank" rel="noopener">Hupont &amp; Gomez</a></td><td>2022</td><td>Documenting Use Cases in the Affective Computing Domain Using Unified Modeling Language</td><td>Method, process, or task</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2508.14119" target="_blank" rel="noopener">Jorgensen</a></td><td>2025</td><td>Documenting Deployment with Fabric: A Repository of Real-World AI Governance</td><td>System</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2508.06811" target="_blank" rel="noopener">Laufer et al.,</a></td><td>2025</td><td>Anatomy of a Machine Learning Ecosystem: 2 Million Models on Hugging Face</td><td>Evaluation only</td><td>Artifact study</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2402.05160" target="_blank" rel="noopener">Liang et al.</a></td><td>2024</td><td>What’s Documented in AI? Systematic Analysis of 32K AI Model Cards</td><td>Evaluation only</td><td>Artifact study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3544548.3580652" target="_blank" rel="noopener">Liao et al.</a></td><td>2023</td><td>Designerly Understanding: Information Needs for Model Transparency to Support Design Ideation for AI-Powered User Experience</td><td>Evaluation only</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2508.08804" target="_blank" rel="noopener">Lucaj et al.</a></td><td>2025</td><td>TechOps: Technical Documentation Templates for the AI Act</td><td>System</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2508.08804" target="_blank" rel="noopener">Marone &amp; Van Durme</a></td><td>2023</td><td>Data Portraits: Recording Foundation Model Training Data</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://aclanthology.org/2021.gem-1.11/" target="_blank" rel="noopener">McMillan-Major et al.</a></td><td>2021</td><td>Reusable Templates and Guides For Documenting Datasets and Models for Natural Language Processing and Generation: A Case Study of the HuggingFace and GEM Data and Model Cards</td><td>Data, Model</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3594737" target="_blank" rel="noopener">McMillan-Major, Bender, &amp; Friedman</a></td><td>2024</td><td>Data Statements: From Technical Concept to Community Practice</td><td>Data</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3442188.3445880" target="_blank" rel="noopener">Miceli et al.</a></td><td>2021</td><td>Documenting Computer Vision Datasets: An Invitation to Reflexive Data Practices</td><td>Evaluation only</td><td>Practitioner real-world study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3287560.3287596" target="_blank" rel="noopener">Mitchell et al.</a></td><td>2019</td><td>Model Cards for Model Reporting</td><td>Model</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2107.01183" target="_blank" rel="noopener">Mohammad</a></td><td>2022</td><td>Ethics Sheets for AI Tasks</td><td>Method, process, or task</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3544548.3581242" target="_blank" rel="noopener">Moore, LIao, &amp; Subramonyam</a></td><td>2023</td><td>fAIlureNotes: Supporting Designers in Understanding the Limits of AI Models for Computer Vision Tasks</td><td>Evaluation only</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3554364.3559117" target="_blank" rel="noopener">Nunes et al.</a></td><td>2022</td><td>Using Model Cards for Ethical Reflection: A Qualitative Exploration</td><td>Evaluation only</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3593013.3594049" target="_blank" rel="noopener">Papakyriakopoulos et al.</a></td><td>2023</td><td>Augmented Datasheets for Speech Datasets and Ethical Decision-Making</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3643916.3644412" target="_blank" rel="noopener">Pepe et al.</a></td><td>2024</td><td>How do Hugging Face Models Document Datasets, Bias, and Licenses? An Empirical Study</td><td>Evaluation only</td><td>Artifact study</td></tr>
-<tr><td><a href="https://perma.cc/BX4D-ZXP7" target="_blank" rel="noopener">Procope et al.</a></td><td>2022</td><td>System-Level Transparency of Machine Learning</td><td>System</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533231" target="_blank" rel="noopener">Pushkarna et al.</a></td><td>2022</td><td>Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI</td><td>Data</td><td>Practitioner real-world study</td></tr>
-<tr><td><a href="http://arxiv.org/abs/1912.06166" target="_blank" rel="noopener">Raji &amp; Yang</a></td><td>2020</td><td>ABOUT ML: Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles</td><td>System</td><td>None</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2303.10721" target="_blank" rel="noopener">Reid &amp; Williams</a></td><td>2023</td><td>Right the Docs: Characterising Voice Dataset Documentation Practices Used in Machine Learning</td><td>Evaluation only</td><td>Practitioner real-world study, Artifact study</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2006.13796" target="_blank" rel="noopener">Richards et al.</a></td><td>2020</td><td>A Methodology for Creating AI FactSheets</td><td>System</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2312.06153" target="_blank" rel="noopener">Roman et al.</a></td><td>2023</td><td>Open Datasheets: Machine-Readable Documentation for Open Datasets and Responsible AI Assessments</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533239" target="_blank" rel="noopener">Rostamzadeh et al.</a></td><td>2022</td><td>Healthsheet: Development of a Transparency Artifact for Health Datasets</td><td>Data</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3531146.3533110" target="_blank" rel="noopener">Shen et al.</a></td><td>2022</td><td>The Model Card Authoring Toolkit: Toward Community-Centered, Deliberation-Driven AI Design</td><td>Model</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2103.09710" target="_blank" rel="noopener">Shimorina &amp; Belz</a></td><td>2021</td><td>The Human Evaluation Datasheet 1.0: A Template for Recording Details of Human Evaluation Experiments in NLP</td><td>Method, process, or task</td><td>None</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2111.02034" target="_blank" rel="noopener">Soh</a></td><td>2021</td><td>Building Legal Datasets</td><td>Data</td><td>None</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2410.12974" target="_blank" rel="noopener">Sokol et al.</a></td><td>2025</td><td>BenchmarkCards: Standardized Documentation for Large Language Model Benchmarks</td><td>Method, process, or task</td><td>Practitioner lab-study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3351095.3372870" target="_blank" rel="noopener">Sokol &amp; Flach</a></td><td>2020</td><td>Explainability Fact Sheets: A Framework for Systematic Assessment of Explainable Approaches</td><td>Method, process, or task</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://openreview.net/forum?id=K7ke_GZ_6N" target="_blank" rel="noopener">Srinivasan et al.</a></td><td>2021</td><td>Artsheets for Art Datasets</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://perma.cc/3QVB-UZ9X" target="_blank" rel="noopener">Stoyanovich &amp; Howe</a></td><td>2019</td><td>Nutritional Labels for Data and Models</td><td>Data, Model</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2504.13839" target="_blank" rel="noopener">Staufer et al.</a></td><td>2025</td><td>Audit Cards: Contextualizing AI Evaluations</td><td>Method, process, or task</td><td>Practitioner real-world study, Artifact study</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2103.07532" target="_blank" rel="noopener">Subramaniam et al.</a></td><td>2023</td><td>Comprehensive and Comprehensible Data Catalogs: The What, Who, Where, When, Why, and How of Metadata Management</td><td>Data</td><td>Practitioner lab study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/10.1145/3357384.3357853" target="_blank" rel="noopener">Sun et al.</a></td><td>2019</td><td>MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science</td><td>Data</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="http://arxiv.org/abs/2110.13601" target="_blank" rel="noopener">Tagliabue et al.</a></td><td>2021</td><td>DAG Card Is the New Model Card</td><td>Method, process, or task</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://arxiv.org/abs/2503.23574" target="_blank" rel="noopener">Tang et al.</a></td><td>2025</td><td>Navigating Uncertainties: Understanding How GenAI Developers Document Their Models on Open-Source Platforms</td><td>Evaluation only</td><td>Practitioner lab study, Artifact study</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3183713.3193568" target="_blank" rel="noopener">Yang et al.</a></td><td>2018</td><td>A Nutritional Label for Rankings</td><td>Method, process, or task</td><td>Feasibility analysis</td></tr>
-<tr><td><a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557115" target="_blank" rel="noopener">Zheng et al.</a></td><td>2022</td><td>Network Report: A Structured Description for Network Datasets</td><td>Data</td><td>Practitioner lab study</td></tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3491101.3519724" target="_blank" rel="noopener">Adkins et
+            al.</a></td>
+        <td>2022</td>
+        <td>Prescriptive and Descriptive Approaches to Machine-Learning Transparency</td>
+        <td>Method, process, or task</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2409.06926" target="_blank" rel="noopener">Ahlawat, Winecoff, &amp; Mayer</a>
+        </td>
+        <td>2024</td>
+        <td>Minimum Viable Ethics: From Institutionalizing Industry AI Governance to Product Impact</td>
+        <td>Evaluation only</td>
+        <td>Practitioner real-world study</td>
+      </tr>
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8843893" target="_blank" rel="noopener">Arnold et
+            al.</a></td>
+        <td>2019</td>
+        <td>FactSheets: Increasing trust in AI services through supplier&#x27;s declarations of conformity</td>
+        <td>System</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2202.12443" target="_blank" rel="noopener">Baracaldo et al.</a></td>
+        <td>2022</td>
+        <td>Towards an Accountable and Reproducible Federated Learning: A FactSheets Approach</td>
+        <td>System</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3617694.3623239" target="_blank" rel="noopener">Barker et
+            al.</a></td>
+        <td>2023</td>
+        <td>FeedbackLogs: Recording and Incorporating Stakeholder Feedback into Machine Learning Pipelines</td>
+        <td>Method, process, or task</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a
+            href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00041/43452/Data-Statements-for-Natural-Language-Processing"
+            target="_blank" rel="noopener">Bender &amp; Friedman</a></td>
+        <td>2018</td>
+        <td>Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science
+        </td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/full/10.1145/3544548.3581518" target="_blank" rel="noopener">Bhat et al.</a>
+        </td>
+        <td>2023</td>
+        <td>Aspirations and Practice of ML Model Documentation: Moving the Needle with Nudging and Traceability</td>
+        <td>Evaluation only</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2102.03985" target="_blank" rel="noopener">Blasch et al.</a></td>
+        <td>2020</td>
+        <td>Multisource AI Scorecard Table for System Evaluation</td>
+        <td>System</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2508.18919" target="_blank" rel="noopener">Bogucka et al.</a></td>
+        <td>2025</td>
+        <td>Impact Assessment Card: Communicating Risks and Benefits of AI Uses</td>
+        <td>Method, process, or task</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3479582" target="_blank" rel="noopener">Boyd</a></td>
+        <td>2021</td>
+        <td>Datasheets for Datasets help ML Engineers Notice and Understand Ethical Issues in Training Data</td>
+        <td>Evaluation only</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2307.11525" target="_blank" rel="noopener">Brajovic et al.</a></td>
+        <td>2023</td>
+        <td>Model Reporting for Certifiable AI: A Proposal from Merging EU Regulation into AI Development</td>
+        <td>System</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3551624.3555301" target="_blank" rel="noopener">Chang &amp;
+            Custis</a></td>
+        <td>2022</td>
+        <td>Understanding Implementation Challenges in Machine Learning Documentation</td>
+        <td>Evaluation only</td>
+        <td>Practitioner real-world study</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2201.03954" target="_blank" rel="noopener">Chmielinski et al.</a></td>
+        <td>2020</td>
+        <td>The Dataset Nutrition Label (2nd Gen): Leveraging Context to Mitigate Harms in Artificial Intelligence</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://perma.cc/YJT3-C6YM" target="_blank" rel="noopener">Chmielinski et al.</a></td>
+        <td>2024</td>
+        <td>The CLeAR Documentation Framework for AI Transparency Recommendations for Practitioners and Context for
+          Policymakers</td>
+        <td>Method, process, or task</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533108" target="_blank" rel="noopener">Crisan et
+            al.</a></td>
+        <td>2022</td>
+        <td>Interactive Model Cards: A Human-Centered Approach to Model Documentation</td>
+        <td>Model</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2402.05160" target="_blank" rel="noopener">Díaz et al.</a></td>
+        <td>2024</td>
+        <td>SoUnD Framework: Analyzing (So)Cial Representation in (Un)Structured (D)Ata</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/1803.09010" target="_blank" rel="noopener">Gebru et al.</a></td>
+        <td>2021</td>
+        <td>Datasheets for Datasets</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3351095.3372862" target="_blank" rel="noopener">Geiger et
+            al.</a></td>
+        <td>2020</td>
+        <td>Garbage in, Garbage out? Do Machine Learning Application Papers in Social Computing Report Where
+          Human-labeled Training Data Comes From?</td>
+        <td>Evaluation only</td>
+        <td>Artifact study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3600211.3604698" target="_blank" rel="noopener">Gilbert et
+            al.</a></td>
+        <td>2023</td>
+        <td>Reward Reports for Reinforcement Learning</td>
+        <td>System</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3555760" target="_blank" rel="noopener">Heger et al.</a></td>
+        <td>2022</td>
+        <td>Understanding Machine Learning Practitioners’ Data Documentation Perceptions, Needs, Challenges, and
+          Desiderata</td>
+        <td>Evaluation only</td>
+        <td>Practitioner real-world study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3334480.3383051" target="_blank" rel="noopener">Hind et al.</a>
+        </td>
+        <td>2019</td>
+        <td>Experiences with Improving the Transparency of AI Models and Services</td>
+        <td>Evaluation only</td>
+        <td>Practitioner real-world study</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/1805.03677" target="_blank" rel="noopener">Holland et al.</a></td>
+        <td>2018</td>
+        <td>The Dataset Nutrition Label: A Framework To Drive Higher Data Quality Standards</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/9953809" target="_blank" rel="noopener">Hupont &amp;
+            Gomez</a></td>
+        <td>2022</td>
+        <td>Documenting Use Cases in the Affective Computing Domain Using Unified Modeling Language</td>
+        <td>Method, process, or task</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2508.14119" target="_blank" rel="noopener">Jorgensen</a></td>
+        <td>2025</td>
+        <td>Documenting Deployment with Fabric: A Repository of Real-World AI Governance</td>
+        <td>System</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2508.06811" target="_blank" rel="noopener">Laufer et al.,</a></td>
+        <td>2025</td>
+        <td>Anatomy of a Machine Learning Ecosystem: 2 Million Models on Hugging Face</td>
+        <td>Evaluation only</td>
+        <td>Artifact study</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2402.05160" target="_blank" rel="noopener">Liang et al.</a></td>
+        <td>2024</td>
+        <td>What’s Documented in AI? Systematic Analysis of 32K AI Model Cards</td>
+        <td>Evaluation only</td>
+        <td>Artifact study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3544548.3580652" target="_blank" rel="noopener">Liao et al.</a>
+        </td>
+        <td>2023</td>
+        <td>Designerly Understanding: Information Needs for Model Transparency to Support Design Ideation for AI-Powered
+          User Experience</td>
+        <td>Evaluation only</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2508.08804" target="_blank" rel="noopener">Lucaj et al.</a></td>
+        <td>2025</td>
+        <td>TechOps: Technical Documentation Templates for the AI Act</td>
+        <td>System</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2508.08804" target="_blank" rel="noopener">Marone &amp; Van Durme</a></td>
+        <td>2023</td>
+        <td>Data Portraits: Recording Foundation Model Training Data</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://aclanthology.org/2021.gem-1.11/" target="_blank" rel="noopener">McMillan-Major et al.</a>
+        </td>
+        <td>2021</td>
+        <td>Reusable Templates and Guides For Documenting Datasets and Models for Natural Language Processing and
+          Generation: A Case Study of the HuggingFace and GEM Data and Model Cards</td>
+        <td>Data, Model</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3594737" target="_blank" rel="noopener">McMillan-Major, Bender,
+            &amp; Friedman</a></td>
+        <td>2024</td>
+        <td>Data Statements: From Technical Concept to Community Practice</td>
+        <td>Data</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3442188.3445880" target="_blank" rel="noopener">Miceli et al.</a>
+        </td>
+        <td>2021</td>
+        <td>Documenting Computer Vision Datasets: An Invitation to Reflexive Data Practices</td>
+        <td>Evaluation only</td>
+        <td>Practitioner real-world study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3287560.3287596" target="_blank" rel="noopener">Mitchell et
+            al.</a></td>
+        <td>2019</td>
+        <td>Model Cards for Model Reporting</td>
+        <td>Model</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2107.01183" target="_blank" rel="noopener">Mohammad</a></td>
+        <td>2022</td>
+        <td>Ethics Sheets for AI Tasks</td>
+        <td>Method, process, or task</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3544548.3581242" target="_blank" rel="noopener">Moore, LIao,
+            &amp; Subramonyam</a></td>
+        <td>2023</td>
+        <td>fAIlureNotes: Supporting Designers in Understanding the Limits of AI Models for Computer Vision Tasks</td>
+        <td>Evaluation only</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3554364.3559117" target="_blank" rel="noopener">Nunes et al.</a>
+        </td>
+        <td>2022</td>
+        <td>Using Model Cards for Ethical Reflection: A Qualitative Exploration</td>
+        <td>Evaluation only</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3593013.3594049" target="_blank"
+            rel="noopener">Papakyriakopoulos et al.</a></td>
+        <td>2023</td>
+        <td>Augmented Datasheets for Speech Datasets and Ethical Decision-Making</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3643916.3644412" target="_blank" rel="noopener">Pepe et al.</a>
+        </td>
+        <td>2024</td>
+        <td>How do Hugging Face Models Document Datasets, Bias, and Licenses? An Empirical Study</td>
+        <td>Evaluation only</td>
+        <td>Artifact study</td>
+      </tr>
+      <tr>
+        <td><a href="https://perma.cc/BX4D-ZXP7" target="_blank" rel="noopener">Procope et al.</a></td>
+        <td>2022</td>
+        <td>System-Level Transparency of Machine Learning</td>
+        <td>System</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533231" target="_blank" rel="noopener">Pushkarna et
+            al.</a></td>
+        <td>2022</td>
+        <td>Data Cards: Purposeful and Transparent Dataset Documentation for Responsible AI</td>
+        <td>Data</td>
+        <td>Practitioner real-world study</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/1912.06166" target="_blank" rel="noopener">Raji &amp; Yang</a></td>
+        <td>2020</td>
+        <td>ABOUT ML: Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles</td>
+        <td>System</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2303.10721" target="_blank" rel="noopener">Reid &amp; Williams</a></td>
+        <td>2023</td>
+        <td>Right the Docs: Characterising Voice Dataset Documentation Practices Used in Machine Learning</td>
+        <td>Evaluation only</td>
+        <td>Practitioner real-world study, Artifact study</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2006.13796" target="_blank" rel="noopener">Richards et al.</a></td>
+        <td>2020</td>
+        <td>A Methodology for Creating AI FactSheets</td>
+        <td>System</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2312.06153" target="_blank" rel="noopener">Roman et al.</a></td>
+        <td>2023</td>
+        <td>Open Datasheets: Machine-Readable Documentation for Open Datasets and Responsible AI Assessments</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533239" target="_blank" rel="noopener">Rostamzadeh et
+            al.</a></td>
+        <td>2022</td>
+        <td>Healthsheet: Development of a Transparency Artifact for Health Datasets</td>
+        <td>Data</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3531146.3533110" target="_blank" rel="noopener">Shen et al.</a></td>
+        <td>2022</td>
+        <td>The Model Card Authoring Toolkit: Toward Community-Centered, Deliberation-Driven AI Design</td>
+        <td>Model</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2103.09710" target="_blank" rel="noopener">Shimorina &amp; Belz</a></td>
+        <td>2021</td>
+        <td>The Human Evaluation Datasheet 1.0: A Template for Recording Details of Human Evaluation Experiments in NLP
+        </td>
+        <td>Method, process, or task</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2111.02034" target="_blank" rel="noopener">Soh</a></td>
+        <td>2021</td>
+        <td>Building Legal Datasets</td>
+        <td>Data</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2410.12974" target="_blank" rel="noopener">Sokol et al.</a></td>
+        <td>2025</td>
+        <td>BenchmarkCards: Standardized Documentation for Large Language Model Benchmarks</td>
+        <td>Method, process, or task</td>
+        <td>Practitioner lab-study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3351095.3372870" target="_blank" rel="noopener">Sokol &amp;
+            Flach</a></td>
+        <td>2020</td>
+        <td>Explainability Fact Sheets: A Framework for Systematic Assessment of Explainable Approaches</td>
+        <td>Method, process, or task</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://openreview.net/forum?id=K7ke_GZ_6N" target="_blank" rel="noopener">Srinivasan et al.</a>
+        </td>
+        <td>2021</td>
+        <td>Artsheets for Art Datasets</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://perma.cc/3QVB-UZ9X" target="_blank" rel="noopener">Stoyanovich &amp; Howe</a></td>
+        <td>2019</td>
+        <td>Nutritional Labels for Data and Models</td>
+        <td>Data, Model</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2504.13839" target="_blank" rel="noopener">Staufer et al.</a></td>
+        <td>2025</td>
+        <td>Audit Cards: Contextualizing AI Evaluations</td>
+        <td>Method, process, or task</td>
+        <td>Practitioner real-world study, Artifact study</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2103.07532" target="_blank" rel="noopener">Subramaniam et al.</a></td>
+        <td>2023</td>
+        <td>Comprehensive and Comprehensible Data Catalogs: The What, Who, Where, When, Why, and How of Metadata
+          Management</td>
+        <td>Data</td>
+        <td>Practitioner lab study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/10.1145/3357384.3357853" target="_blank" rel="noopener">Sun et al.</a></td>
+        <td>2019</td>
+        <td>MithraLabel: Flexible Dataset Nutritional Labels for Responsible Data Science</td>
+        <td>Data</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="http://arxiv.org/abs/2110.13601" target="_blank" rel="noopener">Tagliabue et al.</a></td>
+        <td>2021</td>
+        <td>DAG Card Is the New Model Card</td>
+        <td>Method, process, or task</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://arxiv.org/abs/2503.23574" target="_blank" rel="noopener">Tang et al.</a></td>
+        <td>2025</td>
+        <td>Navigating Uncertainties: Understanding How GenAI Developers Document Their Models on Open-Source Platforms
+        </td>
+        <td>Evaluation only</td>
+        <td>Practitioner lab study, Artifact study</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3183713.3193568" target="_blank" rel="noopener">Yang et al.</a>
+        </td>
+        <td>2018</td>
+        <td>A Nutritional Label for Rankings</td>
+        <td>Method, process, or task</td>
+        <td>Feasibility analysis</td>
+      </tr>
+      <tr>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557115" target="_blank" rel="noopener">Zheng et al.</a>
+        </td>
+        <td>2022</td>
+        <td>Network Report: A Structured Description for Network Datasets</td>
+        <td>Data</td>
+        <td>Practitioner lab study</td>
+      </tr>
     </tbody>
   </table>
 
-  <div style="background:#f8f9fa; border-left:4px solid #d1d5db; padding:1rem; margin-top:2rem; line-height:1.6; font-style:italic;">
+  <div
+    style="background:#f8f9fa; border-left:4px solid #d1d5db; padding:1rem; margin-top:2rem; line-height:1.6; font-style:italic;">
     <p>
-      For each framework, we classified whether the approach primarily focused on data; models; systems; or methods, tasks, and processes. 
-      When a framework did not fit neatly into one of these categories, we assigned it to the most appropriate category or categories based on its primary focus. 
+      For each framework, we classified whether the approach primarily focused on data; models; systems; or methods,
+      tasks, and processes.
+      When a framework did not fit neatly into one of these categories, we assigned it to the most appropriate category
+      or categories based on its primary focus.
       We also categorized the type of evaluation each framework or empirical research study employed.
     </p>
     <p>
-      Frameworks employing a "feasibility analysis" are those where the framework’s authors or another group applied the framework to create documentation for a hypothetical or actual dataset, model, system, or method. 
-      This type of analysis demonstrates that the framework could theoretically be used for its intended purpose but does not involve empirical evaluation with practitioners in research or real-world settings. 
-      If a study developed a documentation artifact for the purpose of an empirical study, we classified this as part of the empirical study rather than as a feasibility analysis, 
+      Frameworks employing a "feasibility analysis" are those where the framework’s authors or another group applied the
+      framework to create documentation for a hypothetical or actual dataset, model, system, or method.
+      This type of analysis demonstrates that the framework could theoretically be used for its intended purpose but
+      does not involve empirical evaluation with practitioners in research or real-world settings.
+      If a study developed a documentation artifact for the purpose of an empirical study, we classified this as part of
+      the empirical study rather than as a feasibility analysis,
       as empirical studies offer a more rigorous evaluation.
     </p>
     <p>
-      We classify publications as employing a "practitioner lab study" when the evaluation involved practitioners within a controlled research setting. 
-      We classify "practitioner real-world studies" as those examining practitioner methods and practices within their real-world work environments. 
-      Both lab and real-world studies have unique strengths, and neither is inherently more rigorous or useful than the other. 
-      We define "artifact studies" as studies of publicly available documentation artifacts such as Github repository documentation or Hugging Face model cards.
+      We classify publications as employing a "practitioner lab study" when the evaluation involved practitioners within
+      a controlled research setting.
+      We classify "practitioner real-world studies" as those examining practitioner methods and practices within their
+      real-world work environments.
+      Both lab and real-world studies have unique strengths, and neither is inherently more rigorous or useful than the
+      other.
+      We define "artifact studies" as studies of publicly available documentation artifacts such as Github repository
+      documentation or Hugging Face model cards.
     </p>
     <p>
-      In some instances, framework authors mentioned consulting relevant stakeholders during the design or refinement of their framework. 
-      However, if these consultations were only briefly mentioned, we do not classify the work as including a practitioner study.
+      In some instances, framework authors mentioned consulting relevant stakeholders during the design or refinement of
+      their framework.
+      However, if these consultations were only briefly mentioned, we do not classify the work as including a
+      practitioner study.
     </p>
   </div>
 
@@ -156,7 +623,7 @@
     // Simple client-side filter over all cells
     const input = document.getElementById('filterInput');
     const tbody = document.getElementById('tableBody');
-    input.addEventListener('input', function() {
+    input.addEventListener('input', function () {
       const q = this.value.toLowerCase();
       for (const row of tbody.rows) {
         const match = Array.from(row.cells).some(td => td.textContent.toLowerCase().includes(q));
@@ -165,67 +632,68 @@
     });
   </script>
   <script>
-    
-(function() {
-  function getCellValue(tr, idx) {
-    return tr.children[idx].textContent.trim();
-  }
-  function detectType(values) {
-    // Try number
-    const nums = values.map(v => v.replace(/[, ]/g, '')).filter(v => v.length);
-    const isNum = nums.length && nums.every(v => !isNaN(v));
-    if (isNum) return 'num';
-    // Try date
-    const dates = values.filter(v => v.length);
-    const isDate = dates.length && dates.every(v => !isNaN(Date.parse(v)));
-    if (isDate) return 'date';
-    return 'str';
-  }
-  function comparator(type, idx, asc) {
-    return function(a, b) {
-      const va = getCellValue(a, idx);
-      const vb = getCellValue(b, idx);
-      if (type === 'num') {
-        const na = parseFloat(va.replace(/[, ]/g, '')) || 0;
-        const nb = parseFloat(vb.replace(/[, ]/g, '')) || 0;
-        return (na - nb) * (asc ? 1 : -1);
-      } else if (type === 'date') {
-        const da = new Date(va).getTime() || 0;
-        const db = new Date(vb).getTime() || 0;
-        return (da - db) * (asc ? 1 : -1);
-      } else {
-        return va.localeCompare(vb, undefined, { sensitivity: 'base' }) * (asc ? 1 : -1);
+
+    (function () {
+      function getCellValue(tr, idx) {
+        return tr.children[idx].textContent.trim();
       }
-    };
-  }
-  function makeSortable(table) {
-    const ths = table.tHead ? table.tHead.rows[0].cells : [];
-    for (let i = 0; i < ths.length; i++) {
-      let asc = true;
-      ths[i].style.cursor = 'pointer';
-      ths[i].addEventListener('click', function() {
-        const tbody = table.tBodies[0];
-        const rows = Array.from(tbody.querySelectorAll('tr'));
-        // Detect type based on column values
-        const colValues = rows.map(r => r.children[i].textContent.trim());
-        const type = detectType(colValues);
-        rows.sort(comparator(type, i, asc));
-        // Re-append rows
-        const frag = document.createDocumentFragment();
-        rows.forEach(r => frag.appendChild(r));
-        tbody.appendChild(frag);
-        // Toggle for next click
-        asc = !asc;
+      function detectType(values) {
+        // Try number
+        const nums = values.map(v => v.replace(/[, ]/g, '')).filter(v => v.length);
+        const isNum = nums.length && nums.every(v => !isNaN(v));
+        if (isNum) return 'num';
+        // Try date
+        const dates = values.filter(v => v.length);
+        const isDate = dates.length && dates.every(v => !isNaN(Date.parse(v)));
+        if (isDate) return 'date';
+        return 'str';
+      }
+      function comparator(type, idx, asc) {
+        return function (a, b) {
+          const va = getCellValue(a, idx);
+          const vb = getCellValue(b, idx);
+          if (type === 'num') {
+            const na = parseFloat(va.replace(/[, ]/g, '')) || 0;
+            const nb = parseFloat(vb.replace(/[, ]/g, '')) || 0;
+            return (na - nb) * (asc ? 1 : -1);
+          } else if (type === 'date') {
+            const da = new Date(va).getTime() || 0;
+            const db = new Date(vb).getTime() || 0;
+            return (da - db) * (asc ? 1 : -1);
+          } else {
+            return va.localeCompare(vb, undefined, { sensitivity: 'base' }) * (asc ? 1 : -1);
+          }
+        };
+      }
+      function makeSortable(table) {
+        const ths = table.tHead ? table.tHead.rows[0].cells : [];
+        for (let i = 0; i < ths.length; i++) {
+          let asc = true;
+          ths[i].style.cursor = 'pointer';
+          ths[i].addEventListener('click', function () {
+            const tbody = table.tBodies[0];
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            // Detect type based on column values
+            const colValues = rows.map(r => r.children[i].textContent.trim());
+            const type = detectType(colValues);
+            rows.sort(comparator(type, i, asc));
+            // Re-append rows
+            const frag = document.createDocumentFragment();
+            rows.forEach(r => frag.appendChild(r));
+            tbody.appendChild(frag);
+            // Toggle for next click
+            asc = !asc;
+          });
+        }
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        const tables = document.querySelectorAll('table.sortable');
+        tables.forEach(makeSortable);
       });
-    }
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    const tables = document.querySelectorAll('table.sortable');
-    tables.forEach(makeSortable);
-  });
-})();
+    })();
 
   </script>
 
 </body>
+
 </html>
